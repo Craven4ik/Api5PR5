@@ -5,7 +5,6 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,10 +21,9 @@ public class Contact {
     private long id;
     @Schema(example = "89841519170")
     private String number;
-
-    @Schema(example = "Name")
+    @Schema(example = "Maksim")
     private String name;
-    @Schema(example = "Surname")
+    @Schema(example = "Kuppa")
     private String surname;
 
     public Contact(String number, String name, String surname) {
